@@ -1,4 +1,4 @@
-# AWS Consul Auto-Join Terraform Module
+# AWS Consul Auto-Join Terraform Module (External Fork)
 
 Creates an IAM Role & Instance Profile with the necessary permission required for Consul Auto-Join.
 
