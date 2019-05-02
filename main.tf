@@ -60,7 +60,7 @@ data "aws_iam_policy_document" "consul" {
   statement {
     effect    = "Allow"
     resources = [
-      "arn:aws:s3:::hashi-consul-snapshots/*"
+      "arn:aws:s3:::taps3-hashi-consul-snapshot/*"
       ]
     actions = [
       "s3:PutObject",
