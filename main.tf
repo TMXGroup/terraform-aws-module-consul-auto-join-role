@@ -49,10 +49,23 @@ data "aws_iam_policy_document" "consul" {
   }
   statement {
     effect    = "Allow"
-    resources = ["arn:aws:s3:::taps3-hashi-install-binaries/*"]
+    resources = [
+      "arn:aws:s3:::taps3-hashi-install-binaries/*"
+      ]
     actions = [
       "s3:PutObject",
       "s3:GetObject"
+    ]
+  }
+  statement {
+    effect    = "Allow"
+    resources = [
+      "arn:aws:s3:::hashi-consul-snapshots/*"
+      ]
+    actions = [
+      "s3:PutObject",
+      "s3:GetObject",
+      "s3:DeleteObject"
     ]
   }
 }
